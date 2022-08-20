@@ -1,0 +1,95 @@
+# POST http://localhost:3000/users/create-users HTTP/1.1
+# content-type: application/json
+
+#  {
+#   "fname": "guardm2",
+#   "lname": "guardm2",
+#   "username": "guardm2",
+#   "phone": 230956123,
+#   "password": "guardm2",
+#   "aadharno": "1122334456657776",
+#   "role": "guard",
+#   "email": "",
+#   "address": {
+#     "doorno": "12-12-12",
+#     "street": "qwerty",
+#     "city": "qwert",
+#     "state": "qwerty",
+#     "zip": 11111111
+#   },
+#   "scode": "mindspace1"
+# }
+# POST http://localhost:3000/company/create-company HTTP/1.1
+# content-type: application/json
+
+
+# {
+#     "companyname":"ajaykumar",
+#     "scode":"ajayk1"
+# }
+
+# POST http://localhost:3000/visitor/visitorsdata HTTP/1.1
+# content-type: application/json
+
+
+# {
+#    "visitor_type":"customer",
+#     "customer_id":"qwed",
+#     "vehicle_number":"ap05ch0047",
+#     "members":3,
+#     "name":"ajay",
+#     "email":"qwerty@gmail.com",
+#     "mobile":9876564321,
+#     "visit_date":"24-1-2021",
+#     "visit_time":"12",
+#     "status_id":"qw12",
+#     "sez_code":"mindspace123",
+#     "company_code":"qwert123",
+#     "company_name":"qwerty",
+#     "created_on":"12-1-2021"  
+# }
+
+# to get the noof visitors company wise
+# GET http://localhost:3000/visitor/get_noofvisitors?sez_code=mindspace1 HTTP/1.1
+
+
+GET  http://localhost:3000/visitor/AllVisitors HTTP/1.1
+
+
+# {
+    
+#     "fname":"ajay",
+#     "lname":"kumar",
+#     "username":"superadmin123",
+#     "phone":111122111,
+#     "email":"superadmin@gmail.com",
+#     "password":"superadmin123",
+#     "role":"superadmin"
+# }
+
+
+
+# POST http://localhost:3000/users/login HTTP/1.1
+# content-type: application/json
+
+# {
+    
+#     "email":"jay@gmail.com",
+#     "password":"jay1234"
+# }
+
+# delte request
+
+# DELETE  http://localhost:3000/guard/delete-guard/ajay HTTP/1.1
+# content-type: application/json
+
+# {
+    
+#     "email":"jay@gmail.com",
+#     "password":"jay1234"
+# }
+
+
+# GET  http://localhost:3000/users/getUsers?role=admin HTTP/1.1
+
+# GET  http://localhost:3000/company/get-CompanyList?scode=ajayk1 HTTP/1.1
